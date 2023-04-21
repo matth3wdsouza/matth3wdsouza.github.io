@@ -1,0 +1,126 @@
+baseURL: https://matth3wdsouza.github.io/
+languageCode: en-us
+title: Matthew's Playground
+theme: PaperMod
+paginate: 5 # number of posts displayed on one page
+
+enableInlineShortcodes: true
+enableRobotsTXT: true # to generate robots.txt
+
+buildDrafts: false # include drafts when building
+buildFuture: false # include content with publish date in the future
+buildExpired: false # include content which has expired
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# https://github.com/adityatelange/hugo-PaperMod/wiki/Variables#site-variables-under-params
+params:
+  env: production # enable social-metadata and seo
+  title: Matthew's Playground
+  description: "Hello there!"
+  author: Matthew D'Souza
+
+  mainSections:
+  - posts
+  - projects
+
+  images: [""]
+  keywords: [Blog, Portfolio, Computer Science]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowWordCount: false
+  ShowCodeCopyButtons: true
+
+  ShowRssButtonInSectionTermList: false
+  ShowFullTextinRSS: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+
+  ShowShareButtons: true
+
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  
+  # table of contents
+  showtoc: false
+  tocopen: false
+  UseHugoToc: true
+
+  # https://github.com/adityatelange/hugo-PaperMod/wiki/Variables#assets
+  assets:
+    # disableHLJS: false # to disable highlight.js
+    # disableFingerprinting: true
+
+  label:
+    text: "Matthew's Playground"
+    # icon: /icon.png
+    # iconHeight: 35
+
+  # home info mode
+  homeInfoParams:
+    Title: "Hello World!"
+    Content: 
+
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/matth3wdsouza"
+    - name: github
+      url: "https://github.com/matth3wdsouza"
+
+  cover:
+    linkFullImages: true
+    responsiveImages: true
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.0
+    minMatchCharLength: 1
+    keys: ["title", "permalink", "summary", "content"]
+
+# search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+# menu:
+#   main:
+#     - identifier: search
+#       name: search
+#       url: /search/
+#       weight: 1
+#     - identifier: posts
+#       name: posts
+#       url: /posts/
+#       weight: 2
+#     - identifier: projects
+#       name: projects
+#       url: /projects/
+#       weight: 3
+#     - identifier: archives
+#       name: archives
+#       url: /archives/
+#       weight: 4
+    
+privacy:
+  youtube:
+    disable: false
+    privacyEnhanced: true
